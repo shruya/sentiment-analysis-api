@@ -47,36 +47,36 @@ It classifies reviews into **Positive**, **Negative**, or **Neutral**, and retur
 5. **Run the FastAPI server**
 
    uvicorn app.app:app --reload
-Once the server is running, open your browser and visit:
-http://127.0.0.1:8000/docs
+
+   Once the server is running, open your browser and visit:  
+   http://127.0.0.1:8000/docs
 
 6. **(Optional) Test the API with the sample script**
 
    python test_api.py
-**API Endpoints**
-**POST** /analyze
+
+**API Endpoints**  
+**POST** /analyze  
 Upload a CSV/XLSX file and get sentiment analysis results.
 
-   **Example using curl:**
+   **Example using curl:**  
 
      curl -X POST "http://127.0.0.1:8000/analyze" \
      -F "file=@reviews.csv"
 
- ## Project Structure
+## Project Structure
 
- sentiment-analysis-api/
- │
- ├── app/
- │ ├── app.py # Main FastAPI application
- │ ├── utils.py # Helper functions
- │ └── init.py
- │
- ├── test_data/
- │ ├── reviews.csv # Sample reviews CSV for testing
- │
- ├── test_api.py # Script to test the API locally
- ├── requirements.txt # Python dependencies
- ├── README.md # Project documentation
- └── .gitignore
-
-
+sentiment-analysis-api/
+│
+├── app/
+│   ├── app.py # Main FastAPI application
+│   ├── utils.py # Helper functions
+│   └── __init__.py
+│
+├── test_data/
+│   ├── reviews.csv # Sample reviews CSV for testing
+│
+├── test_api.py # Script to test the API locally
+├── requirements.txt # Python dependencies
+├── README.md # Project documentation
+└── .gitignore
