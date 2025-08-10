@@ -9,6 +9,7 @@ attrs==25.3.0
 babel==2.17.0
 beautifulsoup4==4.13.4
 bleach==6.2.0
+blinker==1.9.0
 certifi==2025.4.26
 cffi==1.17.1
 charset-normalizer==3.4.2
@@ -25,6 +26,7 @@ executing==2.2.0
 fastapi==0.115.13
 fastjsonschema==2.21.1
 filelock==3.13.1
+Flask==3.1.1
 fonttools==4.58.1
 fqdn==1.5.1
 fsspec==2024.6.1
@@ -38,6 +40,7 @@ ipykernel==6.29.5
 ipython==9.2.0
 ipython_pygments_lexers==1.1.1
 isoduration==20.11.0
+itsdangerous==2.2.0
 jedi==0.19.2
 Jinja2==3.1.6
 joblib==1.5.1
@@ -93,6 +96,7 @@ pydantic_core==2.33.2
 Pygments==2.19.1
 pyparsing==3.2.3
 python-dateutil==2.9.0.post0
+python-dotenv==1.1.1
 python-json-logger==3.3.0
 python-multipart==0.0.20
 pytz==2025.2
@@ -135,5 +139,4 @@ wcwidth==0.2.13
 webcolors==24.11.1
 webencodings==0.5.1
 websocket-client==1.8.0
-flask
-python-dotenv
+Werkzeug==3.1.3
