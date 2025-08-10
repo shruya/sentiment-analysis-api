@@ -35,13 +35,14 @@ It classifies reviews into **Positive**, **Negative**, or **Neutral**, and retur
    pip install -r requirements.txt
 
 4. **Set up your Groq API key as an environment variable**
-**For macOS/Linux:**
 
-   export GROQ_API_KEY="your_api_key_here"
+   **For macOS/Linux:**
 
-**For Windows (Command Prompt):**
+     export GROQ_API_KEY="your_api_key_here"
 
-   setx GROQ_API_KEY "your_api_key_here"
+   **For Windows (Command Prompt):**
+
+     setx GROQ_API_KEY "your_api_key_here"
 
 5. **Run the FastAPI server**
 
@@ -56,26 +57,26 @@ http://127.0.0.1:8000/docs
 **POST** /analyze
 Upload a CSV/XLSX file and get sentiment analysis results.
 
-**Example using curl:**
+   **Example using curl:**
 
-   curl -X POST "http://127.0.0.1:8000/analyze" \
-   -F "file=@reviews.csv"
+     curl -X POST "http://127.0.0.1:8000/analyze" \
+     -F "file=@reviews.csv"
 
-## Project Structure
+ ## Project Structure
 
-sentiment-analysis-api/
-│
-├── app/
-│ ├── app.py # Main FastAPI application
-│ ├── utils.py # Helper functions
-│ └── init.py
-│
-├── test_data/
-│ ├── reviews.csv # Sample reviews CSV for testing
-│
-├── test_api.py # Script to test the API locally
-├── requirements.txt # Python dependencies
-├── README.md # Project documentation
-└── .gitignore
+ sentiment-analysis-api/
+ │
+ ├── app/
+ │ ├── app.py # Main FastAPI application
+ │ ├── utils.py # Helper functions
+ │ └── init.py
+ │
+ ├── test_data/
+ │ ├── reviews.csv # Sample reviews CSV for testing
+ │
+ ├── test_api.py # Script to test the API locally
+ ├── requirements.txt # Python dependencies
+ ├── README.md # Project documentation
+ └── .gitignore
 
 
